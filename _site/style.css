@@ -1,24 +1,74 @@
+
+/*GLOBAL*/
 body {
   text-align: center;
   margin: 4em;
 }
+
 .title {
   font-size: 48px;
+  font-family: 'Kreon', serif;
 }
-p {}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
 h1 {
   font-size: 35px;
+  font-family: 'Kreon', serif;
 }
+
 h2 {
   font-size: 20px;
+  font-family: 'Kreon', serif;
 }
-a {}
+
 ul {
   list-style-type: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 li {
   display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
+
 img {
   width: 10%;
+  padding: 1em;
+}
+/*END GLOBAL */
+
+
+.sponsors {
+  height: 35em;
+}
+
+.sponsor-blocks {
+  width: 45%;
+  float: left;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.sponsor-blocks img {
+  width: 25%;
+}
+
+.schedule li {
+  display: block;
+  padding: .2em;
+  font-weight: 700;
+}
+
+.schedule span {
+  font-weight: 300;
+}
+
+.schedule-item.break {
+  padding: 1em;
 }
