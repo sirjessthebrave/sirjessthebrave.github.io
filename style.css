@@ -31,6 +31,7 @@ ul {
   margin: 0 auto;
   padding: 0;
 }
+
 li {
   display: inline;
   font-family: 'Roboto', sans-serif;
@@ -41,8 +42,45 @@ img {
   width: 10%;
   padding: 1em;
 }
+
+a {
+    color: #EE3442;
+}
+
+.sign-up {
+  display: none;
+}
 /*END GLOBAL */
 
+/* HEADER */
+header.fixed {
+  position:fixed;
+  top:0px;
+  right:0px;
+  left:0px;
+  z-index:2;
+ background-color: #F2F2F2;
+  font-size: 16px;
+}
+
+header.fixed .title {
+    font-size:2.5em;
+    margin: .5em;
+    float: left;
+}
+header.fixed p {
+  float: right;
+  margin-right: 12em;
+  float: right;
+}
+header.fixed hr {
+  display: none;
+}
+
+header.fixed .title .sign-up {
+  display: inline;
+}
+/* END HEADER */
 
 .sponsors {
   height: 35em;
