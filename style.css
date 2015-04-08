@@ -13,6 +13,7 @@ body {
 p {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  text-align: justify;
 }
 
 h1 {
