@@ -72,6 +72,11 @@ header.fixed .title {
     margin: .5em;
     float: left;
 }
+
+h1.nav-margin-top.fixed {
+  margin-top: 9em;
+}
+
 header.fixed p {
   float: right;
   margin-right: 12em;
@@ -84,6 +89,7 @@ header.fixed hr {
 header.fixed .title .sign-up {
   display: inline;
 }
+
 /* END HEADER */
 
 .sponsors {
