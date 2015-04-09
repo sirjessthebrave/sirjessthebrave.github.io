@@ -51,6 +51,9 @@ a {
   display: none;
 }
 
+#atedrop1 {
+  z-index: 1 !important;
+}
 /*END GLOBAL */
 
 /* HEADER */
