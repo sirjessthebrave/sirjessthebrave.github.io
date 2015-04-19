@@ -12,9 +12,11 @@
     console.log(data);
 
   data.forEach(function(proj, index){
-      if (index >0) {
-        var row = '<div class="name">' + proj.name + '</div>';
+      if (index > 0 && proj.name && proj.about ) {
+        var row = '<div class="row">';
+        row += '<div class="name">' + proj.name + '</div>';
         row += '<div class="about">' + proj.about + '</div>';
+        row += '</div>';
         
         $('#projects').append(row);
     }

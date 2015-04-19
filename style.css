@@ -93,6 +93,7 @@ header.fixed .title .sign-up {
 
 /* END HEADER */
 
+/*SPONSORS*/
 .sponsors {
   height: 35em;
 }
@@ -108,6 +109,10 @@ header.fixed .title .sign-up {
   width: 25%;
 }
 
+/*END SPONSORS*/
+
+/*SCHEDULE */
+
 .schedule li {
   display: block;
   padding: .2em;
@@ -121,3 +126,38 @@ header.fixed .title .sign-up {
 .schedule-item.break {
   padding: 1em;
 }
+/*END SCHEDULE */
+
+/*ABOUT PROJECTS PAGE*/
+
+#projects {
+  overflow: hidden;
+}
+
+.row {
+  clear: both;
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+
+.name {
+  display: inline;
+  float: left;
+  width: 10em;
+  height: auto;
+  padding: 1em;
+  text-align: right;
+  
+}
+
+.about {
+  display: inline;
+  float: left;
+  width: 90em;
+  height: auto;
+  padding: 1em;
+  text-align: left;
+  border-left: solid 1px;
+}
+/*ABOUT PROJECTS PAGE*/
