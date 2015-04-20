@@ -9,7 +9,6 @@
   }
 
   function showInfo(data, tabletop) {
-    console.log(data);
 
   data.forEach(function(proj, index){
       if (index > 0 && proj.name && proj.about ) {
