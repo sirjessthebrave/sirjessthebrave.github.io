@@ -144,7 +144,7 @@ header.fixed .title .sign-up {
 .name {
   display: inline;
   float: left;
-  width: 10em;
+  width: 10%;
   height: auto;
   padding: 1em;
   text-align: right;
@@ -154,10 +154,11 @@ header.fixed .title .sign-up {
 .about {
   display: inline;
   float: left;
-  width: 80em;
+  width: 80%;
   height: auto;
   padding: 1em;
   text-align: left;
   border-left: solid 1px;
 }
+
 /*ABOUT PROJECTS PAGE*/
