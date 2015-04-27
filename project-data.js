@@ -11,7 +11,7 @@
   function showInfo(data, tabletop) {
 
   data.forEach(function(proj, index){
-      if (index > 0 && proj.name && proj.about ) {
+      if (index > 1 && proj.name && proj.about ) {
         var row = '<div class="row">';
         row += '<div class="name">' + proj.name + '</div>';
         row += '<div class="about">' + proj.about + '</div>';
