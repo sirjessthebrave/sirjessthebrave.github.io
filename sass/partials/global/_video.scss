@@ -1,0 +1,13 @@
+.movie-wrapper {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom:2em;
+
+  iframe{
+    position:absolute;
+    height:100%;
+    width:100%;
+  }
+}

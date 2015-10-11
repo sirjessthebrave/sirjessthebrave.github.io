@@ -1,0 +1,17 @@
+img {
+  max-width: 100%;
+  height: auto;
+
+
+  // When IMCE adds inline styling for floats, add margins
+  &[style*="float:left"] {
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+
+  // When IMCE adds inline styling for floats, add margins
+  &[style*="float:right"] {
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+}

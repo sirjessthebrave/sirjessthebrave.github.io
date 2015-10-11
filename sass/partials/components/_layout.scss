@@ -1,0 +1,184 @@
+body {
+  background: url('../img/background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  color: #646464;
+}
+.main-body-wrapper,
+footer {
+  @include container($mobile);
+  @include border-box-sizing;
+    height: 100%;    
+    margin: 0;
+    padding: 1em;
+  
+  @include breakpoint ($bp-med) {
+  @include container(1200px);   
+  }
+}
+
+.side-navigation-wrapper {
+  @include span(3);
+}
+
+.about-wrapper,
+.work-wrapper,
+.fun-wrapper,
+.contact-wrapper, {
+  @include span(9 last);
+}
+
+
+
+.title {
+  font-size: 48px;
+  font-family: 'Kreon', serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: 'Kreon', serif;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: 'Kreon', serif;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+img {
+  width: 10%;
+  padding: 1em;
+}
+
+a {
+   
+}
+
+
+
+
+/* HEADER */
+header.fixed {
+  position:fixed;
+  top:0px;
+  right:0px;
+  left:0px;
+  z-index:2;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  border-bottom: solid 2px #9A9A9A;
+}
+
+header.fixed .title {
+    font-size:2.5em;
+    margin: .5em;
+    float: left;
+}
+
+h1.nav-margin-top.fixed {
+  margin-top: 9em;
+}
+
+header.fixed p {
+  float: right;
+  margin-right: 12em;
+  float: right;
+}
+header.fixed hr {
+  display: none;
+}
+
+header.fixed .title .sign-up {
+  display: inline;
+}
+
+/* END HEADER */
+
+/*SPONSORS*/
+.sponsors {
+  height: 35em;
+}
+
+.sponsor-blocks {
+  width: 45%;
+  float: left;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.sponsor-blocks img {
+  width: 25%;
+}
+
+/*END SPONSORS*/
+
+/*SCHEDULE */
+
+.schedule li {
+  display: block;
+  padding: .2em;
+  font-weight: 700;
+}
+
+.schedule span {
+  font-weight: 300;
+}
+
+.schedule-item.break {
+  padding: 1em;
+}
+/*END SCHEDULE */
+
+/*ABOUT PROJECTS PAGE*/
+
+#projects {
+  overflow: hidden;
+}
+
+.row {
+  clear: both;
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+
+.name {
+  display: inline;
+  float: left;
+  width: 10%;
+  height: auto;
+  padding: 1em;
+  text-align: right;
+  
+}
+
+.about {
+  display: inline;
+  float: left;
+  width: 80%;
+  height: auto;
+  padding: 1em;
+  text-align: left;
+  border-left: solid 1px;
+}
+
+/*ABOUT PROJECTS PAGE*/

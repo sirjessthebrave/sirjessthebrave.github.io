@@ -1,0 +1,37 @@
+@import 'susy';
+//@import 'modular-scale';
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after, 
+  container-position: center,
+  columns: 12, 
+  gutters: 1/4,
+  container: 1200px,
+  column-width: auto,
+  global-box-sizing: border-box,
+  last-flow: to,
+  debug: (
+    image: show,
+    color: rgba(#333, .25), 
+    output: background,
+    toggle: top right, 
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: true,
+    rem: true,
+  )
+);
+
+$mobile: (
+  columns: 4,
+  gutters: .27,
+  container-position: 20px
+);
+
+@include border-box-sizing;
