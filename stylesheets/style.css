@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -693,8 +692,6 @@ body {
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -777,8 +774,8 @@ img[style*="float:right"] {
   font-style: normal;
 }
 html {
-  font-size: 100%;
-  line-height: 1.4;
+  font-size: 88.88889%;
+  line-height: 1.5;
 }
 
 *:focus {
@@ -797,82 +794,28 @@ a:focus {
 }
 
 body {
+  color: #053585;
+  background: #BEF7FA;
+}
+
+body:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-image: url("../img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  color: #646464;
-}
-
-.main-body-wrapper,
-footer {
-  max-width: 1200px;
-  margin-left: 20px;
-  margin-right: 20px;
-  background-image: linear-gradient(to right, rgba(51, 51, 51, 0.25), rgba(89, 89, 89, 0.25) 78.74016%, transparent 78.74016%);
-  background-size: 26.40333%;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top;
-  @include border-box-sizing;
+  width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 1em;
-}
-.main-body-wrapper:after,
-footer:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-@media (min-width: 64em) {
-  .main-body-wrapper,
-  footer {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(51, 51, 51, 0.25), rgba(89, 89, 89, 0.25) 80%, transparent 80%);
-    background-size: 8.47458%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
-  }
-  .main-body-wrapper:after,
-  footer:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-.no-mediaqueries .main-body-wrapper, .no-mediaqueries
-footer {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(51, 51, 51, 0.25), rgba(89, 89, 89, 0.25) 80%, transparent 80%);
-  background-size: 8.47458%;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top;
-}
-.no-mediaqueries .main-body-wrapper:after, .no-mediaqueries
-footer:after {
-  content: " ";
-  display: block;
-  clear: both;
+  opacity: 0.4;
+  z-index: -1;
 }
 
-.side-navigation-wrapper {
-  width: 23.72881%;
-  float: left;
-  margin-right: 1.69492%;
-}
-
-.about-wrapper,
-.work-wrapper,
-.fun-wrapper,
-.contact-wrapper {
-  width: 74.57627%;
-  float: right;
-  margin-right: 0;
+.main-body-wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .title {
@@ -882,12 +825,13 @@ footer:after {
 
 p {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 60px;
   font-family: 'Kreon', serif;
+  margin-top: 1.4em;
 }
 
 h2 {
@@ -910,112 +854,49 @@ li {
 }
 
 img {
-  width: 10%;
+  width: auto;
   padding: 1em;
-}
-
-/* HEADER */
-header.fixed {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  z-index: 2;
-  background-color: #FFFFFF;
-  font-size: 16px;
-  border-bottom: solid 2px #9A9A9A;
-}
-
-header.fixed .title {
-  font-size: 2.5em;
-  margin: .5em;
   float: left;
 }
 
-h1.nav-margin-top.fixed {
-  margin-top: 9em;
+footer {
+  height: 10em;
+  padding: 4em;
+  text-align: center;
 }
 
-header.fixed p {
-  float: right;
-  margin-right: 12em;
-  float: right;
+.footer-list-item {
+  padding: 1em;
 }
 
-header.fixed hr {
-  display: none;
-}
-
-header.fixed .title .sign-up {
-  display: inline;
-}
-
-/* END HEADER */
-/*SPONSORS*/
-.sponsors {
-  height: 35em;
-}
-
-.sponsor-blocks {
-  width: 45%;
+.activities,
+.skills {
+  width: 46%;
   float: left;
-  margin: 0 auto;
-  padding: 1em;
+  margin: 0 2%;
 }
 
-.sponsor-blocks img {
-  width: 25%;
-}
-
-/*END SPONSORS*/
-/*SCHEDULE */
-.schedule li {
-  display: block;
-  padding: .2em;
-  font-weight: 700;
-}
-
-.schedule span {
-  font-weight: 300;
-}
-
-.schedule-item.break {
-  padding: 1em;
-}
-
-/*END SCHEDULE */
-/*ABOUT PROJECTS PAGE*/
-#projects {
+.feeds {
   overflow: hidden;
+  width: 100%;
 }
 
-.row {
-  clear: both;
-  content: "";
+.twitter-feed,
+.spotify-feed {
+  width: 46%;
+  float: left;
+  margin: 0 2%;
+}
+
+.activities-list-item {
   display: block;
-  overflow: hidden;
+  margin: 0 0 1em 0;
 }
 
-.name {
-  display: inline;
-  float: left;
-  width: 10%;
-  height: auto;
+.skills-list-item {
   padding: 1em;
-  text-align: right;
 }
 
-.about {
-  display: inline;
-  float: left;
-  width: 80%;
-  height: auto;
-  padding: 1em;
-  text-align: left;
-  border-left: solid 1px;
-}
-
-/*ABOUT PROJECTS PAGE*/
 /* Welcome to Compass. Use this file to write IE specific override styles.
  * Import this file using the following HTML or equivalent:
  * <!--[if IE]>
