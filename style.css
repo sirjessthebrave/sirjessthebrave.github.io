@@ -32,7 +32,8 @@ a {
 	color: black;
 }
 p{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 2;
 	padding: 20px;
 
 }
