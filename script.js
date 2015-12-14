@@ -1,21 +1,22 @@
+// nav current page fuction
+$(function(){
+    // this will get the full URL at the address bar
+    var url = window.location.href; 
 
-
-// JQuery Sticky Nav
-var win      = $(window),
-    fxel     = $('.date'),
-    fxelHdr = $('header'),
-    eloffset = fxel.offset().top;
-
-win.scroll(function() {
-    if (eloffset < win.scrollTop()) {
-        fxelHdr.addClass("fixed");
-        $('.nav-margin-top').addClass("fixed");
-    } else {
-        fxelHdr.removeClass("fixed");
-        $('.nav-margin-top').removeClass("fixed");
-    }
+    // passes on every "a" tag 
+    $(".nav_button a").each(function() {
+            // checks if its the same on the address bar
+        if(url == (this.href)) { 
+            $(this).closest(".nav_button").addClass("active");
+        }
+    });
 });
-// END JQuery Sticky Nav
+// end of nav current page function
 
-
-
+// grid functions
+$('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+//end grid functions
