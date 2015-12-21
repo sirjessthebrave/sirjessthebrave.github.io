@@ -1,5 +1,11 @@
 body {
   background: url('img/sunset.png') no-repeat;
+  background-size: cover;
+}
+.home {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 1em 2em;
 }
 .main {
   max-width: 960px;
@@ -7,9 +13,9 @@ body {
   text-align: center; 
   font-size: 18px;
   line-height: 1.5;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, .6);
   padding: 0 2em;
-  height: 720px;
+  height: 600px;
   overflow: scroll;
   margin-top: 3em;
 }
