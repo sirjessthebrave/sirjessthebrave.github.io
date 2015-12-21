@@ -2,13 +2,41 @@ body {
   background: url('img/sunset.png') no-repeat;
   background-size: cover;
 }
+
+li{
+  list-style: none;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+
+}
+h1{
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 2px 2px 8px #000000;
+  font-size: 3em;
+}
+h2{
+  color: #367AAB;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+}
 .home {
   color: #ffffff;
   text-decoration: none;
   margin: 1em 2em;
 }
 .main {
-  max-width: 960px;
+  max-width: 85%;
   margin: 0 auto;
   text-align: center; 
   font-size: 18px;
@@ -32,7 +60,7 @@ h3 {
 
 .down {
   margin:0;
-  font-size: 60px;
+  font-size: 40px;
   -webkit-animation: pulsate 1s ease-out;
   -webkit-animation-iteration-count: infinite; 
 }
