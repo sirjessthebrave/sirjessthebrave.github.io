@@ -33,6 +33,8 @@ body {
 a {
   color: $c-black;
   text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
   &:hover,
   &:focus {
     text-decoration: underline;
@@ -41,6 +43,45 @@ a {
   &:focus {
     outline: dotted 2px $c-black;
   }
+
+}
+
+h1{
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 2px 2px 8px #000000;
+  font-size: 5em;
+}
+h2{
+  color: #022A7C;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+img {
+  width: auto;
+  padding: 1em;
+  float: left;
+}
+
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 2;
+  padding: 20px;
 
 }
 
