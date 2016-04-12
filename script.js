@@ -12,3 +12,11 @@ $(function(){
     });
 });
 // end of nav current page function
+
+// grid functions
+$('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+//end grid functions

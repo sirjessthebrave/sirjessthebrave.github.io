@@ -1,0 +1,299 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+li{
+	list-style: none;
+	padding: 10px;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+
+}
+h1{
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	text-shadow: 2px 2px 8px #000000;
+	font-size: 5em;
+}
+h2{
+	color: #022A7C;
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px;
+}
+a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+}
+p{
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 2;
+	padding: 20px;
+
+}
+.containter{
+	width: 100%;
+	margin:0;
+	padding:0;
+	clear: both;
+    overflow: hidden
+}
+.side-nav{
+	height: 100%;
+	width: 15%;
+	float: left;
+	display: inline-block;
+	background-color: #0F4F9C;
+	color: white;
+	min-height: 200px;
+    //margin: 30px 0 30px 0; 
+    padding: 15px 10px;
+    z-index: 100;
+    position: fixed;
+}
+.side-nav a {
+	color: white;
+}
+.side-logo img{
+	text-align: center;
+	margin: 0 auto;
+    display: block;
+    padding: 2em;
+}
+#content-wrapper{
+	width: 85%;
+	float: right;
+	display: inline-block;
+	text-align: center;
+	background-image: url("images/background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position-y: -245px;
+}
+.title-area{
+	height: 300px;
+	padding: 50px;
+}
+.title-area li{
+	display: inline;
+}
+.about-me{
+	background-color: white;
+	min-height: 200px;
+	height: auto;
+}
+.active {
+	background-color: #C0F7FB;
+}
+.active a{
+	color: #333333;
+}
+.web-dev-imgs{
+	background-color: white;
+}
+.web-dev-imgs li{
+	display: inline;
+}
+.articles{
+	background-color: white;
+	min-height: 200px;
+	height: auto;
+}
+.articles li{
+	display: inline-block;
+	border-style: outset;
+	padding: 3%;
+	margin: 5px;
+}
+
+.totro {
+	background-color: #ffffff;
+}
+
+.skillz {
+	background-color: #ffffff;
+}
+
+.organizations {
+	color: #ffffff;
+}
+.organizations-list-item a {
+	color: #ffffff;
+}
+
+.speaking {
+	background-color: #ffffff;
+}
+.projects, .writings {
+	background-color: #ffffff;
+      opacity: .8;
+      margin-top: 4em;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 4em;
+}
+.small-note {
+	font-style: italic;
+	font-size: 10px;
+}
+
+footer {
+	width: 85%;
+	display: inline-block;
+	text-align: center;
+	float: right;
+	/*height: 80px;*/
+	background-color: #333333;
+}
+footer li{
+	display: inline;
+	color: white;
+}
+footer img{
+	margin: 10px;
+	width: 40px;
+	margin: 2em 0;
+}
+/*Screan Breaks*/
+@media screen and (max-width: 900px){
+  .web-dev-imgs li{
+	display: block;
+  }
+  .side-logo img{
+	display: none;
+  }
+  .web-dev-hover img{
+  	width: 70%;
+  	height: auto;
+  }
+}
+/*Why is this not computing!?*/
+@media screen and (max-width: 620px){
+  div #sticky.side-nav{
+	height: 50px;
+	width: 100%;
+	display: block;
+	background-color: white;
+    position: absolute;
+    margin: 0;
+    min-height: 20px;
+  }
+  .side-nav li{
+  	display: inline;
+  	text-align: center;
+  	font-size: 12px;
+  	padding: 5px;
+  }
+  #content-wrapper{
+  	display: block;
+  	width: 100%;
+  	background-position-y: 0;
+  }
+  h1{
+  	font-size: 2em;
+  	padding: 10px;
+  }
+  h2 {
+  	font-size: 1em;
+  }
+  .articles li{
+  	margin: 15px;
+  }
+  footer{
+  	width: 100%;
+  }
+  footer img{
+  	width: 7%;
+  }
+}
+/* GIF GRID */
+.gifs {
+	clear: both;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+
+.gifs  img {
+	width: 100%;
+}
+
+.grid {
+	height: 100%;
+}
+/*.grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }*/
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+/* WEB_DEV PAGE SPECIFIC */
+.web-dev-page{
+	display: inline-block;
+}
+.1{
+	background-image: url(images/road.jpg);
+	height: 10%;
+	height: auto;
+}
+.2{
+	background-image: url(images/road.jpg);
+	height: 10%;
+	height: auto;
+}
+.3{
+	background-image: url(images/road.jpg);
+	height: 10%;
+	height: auto;
+}

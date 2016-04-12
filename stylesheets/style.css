@@ -785,64 +785,12 @@ html {
 a {
   color: #000000;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  color: black;
 }
 a:hover, a:focus {
   text-decoration: underline;
 }
 a:focus {
   outline: dotted 2px #000000;
-}
-
-h1 {
-  color: white;
-  font-family: 'Josefin Sans', sans-serif;
-  text-shadow: 2px 2px 8px #000000;
-  font-size: 5em;
-}
-
-h2 {
-  color: #022A7C;
-  font-family: 'Open Sans', sans-serif;
-  padding: 10px;
-}
-
-ul {
-  list-style-type: none;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  padding: 10px;
-  font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
-}
-
-img {
-  width: auto;
-  padding: 1em;
-  float: left;
-}
-
-p {
-  font-family: 'Josefin Sans', sans-serif;
-  line-height: 2;
-  padding: 20px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
 }
 
 body {
@@ -857,20 +805,12 @@ body:after {
   top: 0px;
   left: 0;
   background-image: url("../img/background.png");
-  background-size: initial;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   opacity: 0.4;
   z-index: -1;
-}
-@media (min-width: 48em) {
-  body:after {
-    background-size: cover;
-  }
-}
-.no-mediaqueries body:after {
-  background-size: cover;
 }
 
 .main-body-wrapper {
@@ -881,6 +821,48 @@ body:after {
 .title {
   font-size: 48px;
   font-family: 'Kreon', serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Kreon', serif;
+  margin-top: 1.4em;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: 'Kreon', serif;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+img {
+  width: auto;
+  padding: 1em;
+  float: left;
+}
+
+footer {
+  height: 10em;
+  padding: 4em;
+  text-align: center;
 }
 
 .footer-list-item {
@@ -913,347 +895,6 @@ body:after {
 
 .skills-list-item {
   padding: 1em;
-}
-
-.containter {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  clear: both;
-  overflow: hidden;
-}
-
-.side-nav {
-  height: 100%;
-  width: 15%;
-  float: left;
-  display: inline-block;
-  background-color: #0F4F9C;
-  color: white;
-  min-height: 200px;
-  padding: 15px 10px;
-  z-index: 100;
-  position: fixed;
-}
-
-.side-nav a {
-  color: white;
-}
-
-.side-logo img {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  padding: 2em;
-}
-
-#content-wrapper {
-  width: 85%;
-  float: right;
-  display: inline-block;
-  text-align: center;
-  background-image: url("images/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-y: -245px;
-}
-@media (min-width: 48em) {
-  #content-wrapper {
-    background-size: cover;
-  }
-}
-.no-mediaqueries #content-wrapper {
-  background-size: cover;
-}
-
-.title-area {
-  height: 300px;
-  padding: 50px;
-}
-
-.title-area li {
-  display: inline;
-}
-
-.about-me {
-  background-color: white;
-  min-height: 200px;
-  height: auto;
-}
-
-.active {
-  background-color: #C0F7FB;
-}
-
-.active a {
-  color: #333333;
-}
-
-.web-dev-imgs {
-  background-color: white;
-}
-
-.web-dev-imgs li {
-  display: inline;
-}
-
-.articles {
-  background-color: white;
-  min-height: 200px;
-  height: auto;
-}
-
-.articles li {
-  display: inline-block;
-  border-style: outset;
-  padding: 3%;
-  margin: 5px;
-}
-
-.totro {
-  background-color: #ffffff;
-}
-
-.skillz {
-  background-color: #ffffff;
-}
-
-.organizations {
-  color: #ffffff;
-}
-
-.organizations-list-item a {
-  color: #ffffff;
-}
-
-.speaking {
-  background-color: #ffffff;
-}
-
-.projects, .writings {
-  background-color: #ffffff;
-  opacity: .8;
-  margin-top: 4em;
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 4em;
-}
-
-.small-note {
-  font-style: italic;
-  font-size: 10px;
-}
-
-/*Screan Breaks*/
-@media screen and (max-width: 900px) {
-  .web-dev-imgs li {
-    display: block;
-  }
-
-  .side-logo img {
-    display: none;
-  }
-
-  .web-dev-hover img {
-    width: 70%;
-    height: auto;
-  }
-}
-/*Why is this not computing!?*/
-@media screen and (max-width: 620px) {
-  div #sticky.side-nav {
-    height: 50px;
-    width: 100%;
-    display: block;
-    background-color: white;
-    position: absolute;
-    margin: 0;
-    min-height: 20px;
-  }
-
-  .side-nav li {
-    display: inline;
-    text-align: center;
-    font-size: 12px;
-    padding: 5px;
-  }
-
-  #content-wrapper {
-    display: block;
-    width: 100%;
-    background-position-y: 0;
-  }
-
-  .articles li {
-    margin: 15px;
-  }
-
-  footer {
-    width: 100%;
-  }
-
-  footer img {
-    width: 7%;
-  }
-}
-/* GIF GRID */
-.gifs {
-  clear: both;
-  overflow: hidden;
-  background-color: #ffffff;
-}
-
-.gifs img {
-  width: 100%;
-}
-
-.grid {
-  height: 100%;
-}
-
-/*.grid-item { width: 25%; }
-.grid-item--width2 { width: 50%; }*/
-/**** Isotope Filtering ****/
-.isotope-item {
-  z-index: 2;
-}
-
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
-}
-
-/**** Isotope CSS3 transitions ****/
-.isotope,
-.isotope .isotope-item {
-  transition-duration: 0.8s;
-}
-
-.isotope {
-  transition-property: height, width;
-}
-
-.isotope .isotope-item {
-  transition-property: -webkit-transform, opacity;
-  transition-property: transform, opacity;
-}
-
-/**** disabling Isotope CSS3 transitions ****/
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-  transition-duration: 0s;
-}
-
-/* WEB_DEV PAGE SPECIFIC */
-body {
-  background: url("img/sunset.png") no-repeat;
-  background-size: cover;
-}
-
-li {
-  list-style: none;
-  padding: 10px;
-  font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
-}
-
-h1 {
-  color: white;
-  font-family: 'Josefin Sans', sans-serif;
-  text-shadow: 2px 2px 8px #000000;
-  font-size: 3em;
-}
-
-h2 {
-  color: #367AAB;
-  font-family: 'Open Sans', sans-serif;
-  padding: 10px;
-}
-
-a {
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-}
-
-p {
-  font-family: 'Josefin Sans', sans-serif;
-  line-height: 1.5;
-}
-
-.home {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 1em 2em;
-}
-
-.main {
-  max-width: 85%;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.5;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 0 2em;
-  height: 600px;
-  overflow: scroll;
-  margin-top: 3em;
-}
-
-h1 {
-  margin-bottom: 0px;
-}
-
-h3 {
-  margin: 0;
-}
-
-.date {
-  font-style: italic;
-  font-size: 14px;
-}
-
-.down {
-  margin: 0;
-  font-size: 40px;
-  -webkit-animation: pulsate 1s ease-out;
-  -webkit-animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes pulsate {
-  0% {
-    -webkit-transform: scale(0.1, 0.1);
-    opacity: 0.0;
-  }
-  50% {
-    opacity: 1.0;
-  }
-  100% {
-    -webkit-transform: scale(1.2, 1.2);
-    opacity: 0.0;
-  }
-}
-footer {
-  height: 10em;
-  padding: 4em;
-  text-align: center;
-  width: 85%;
-  display: inline-block;
-  text-align: center;
-  float: right;
-  /*height: 80px;*/
-  background-color: #333333;
-}
-footer li {
-  display: inline;
-  color: white;
-}
-footer img {
-  margin: 10px;
-  width: 40px;
-  margin: 2em 0;
 }
 
 /* Welcome to Compass. Use this file to write IE specific override styles.
