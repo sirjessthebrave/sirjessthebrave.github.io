@@ -1,0 +1,35 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Jessica Bell
+email: jess.bell317@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Personal Portfolio of Jessica Bell
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://sirjessthebrave.github.io" # the base hostname & protocol for your site
+twitter_username: sirjessthebrave
+github_username:  sirjessthebrave
+
+# Build settings
+markdown: kramdown
+
+# Collections
+collections:
+  members:
+    output: true
+    permalink: /:path
+  events:
+    output: true
+    permalink: /:path
+
+# Redirects
+gems:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from

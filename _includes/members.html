@@ -1,0 +1,10 @@
+<ul>
+{% for member in site.members %}
+  {% if member.categories.first == 'member' %}
+    <li>
+      <a href="{{ member.link }}">
+        <img alt ="{{ member.title }}" src="{{ member.logo }}">
+      </a>
+    </li>
+  {% endif %}
+{% endfor %}

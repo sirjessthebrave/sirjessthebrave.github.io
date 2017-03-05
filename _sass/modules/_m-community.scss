@@ -1,0 +1,44 @@
+.blue-background {
+	background-color:$color-teal;
+}
+.community {
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: scroll;
+	@include breakpoint($break-large){
+		overflow: hidden;
+	}
+	.community-inner-wrapper {
+		width: 80%;
+	  	overflow: auto;
+    	margin: 44px 0;
+    	@include breakpoint($break-large){
+    		margin: 0;
+    	}
+	}
+	.four-column {
+		width: 100%;
+		float: none;
+		padding: 1em 0;
+		@include breakpoint($break-large){
+			width: 25%;
+			float: left;
+			box-sizing: border-box;
+			padding-right: 3em;
+		}
+		p{
+			color: $color-dark-gray;
+			text-align: justify;
+			line-height: 1.2;
+			a{
+				color: $color-dark-gray;
+				&:hover{
+					color: $color-dark-gray;
+					border-bottom: solid $color-dark-gray 4px;
+				}
+			}
+		}
+	}
+}

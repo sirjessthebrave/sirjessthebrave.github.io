@@ -1,0 +1,44 @@
+.contact{
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: scroll;
+	color: $color-dark-gray;
+	@include breakpoint($break-large){
+		overflow: hidden;
+	}
+	.contact-inner{
+		overflow: hidden;
+    	margin: 44px 0;
+    	@include breakpoint($break-large){
+    		margin: 0;
+    	}
+	}
+	.small-col-wrapper{
+		width: 50%;
+		margin:0 auto;
+	}
+	.contact-img {
+		border: solid 6px $color-off-white;
+		max-height: 400px;
+	    width: auto;
+	    float: right;
+	}
+	h2{
+		color: $color-off-white;
+		margin-top: 4em;
+	}
+	p{
+		font-family: 'Roboto Slab', serif;
+		font-size: 14px;
+	}
+}
+.two-column {
+	width: 100%;
+	float: none;
+	@include breakpoint($break-large){
+		float: left;
+		width: 50%;
+	}
+}

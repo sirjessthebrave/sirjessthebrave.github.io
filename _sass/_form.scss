@@ -1,0 +1,62 @@
+// global form styling
+input {
+  border: 1px solid $color-light-gray;
+  display: block;
+  font-family: $font-main;
+  margin: 1em 0;
+  padding: 1em;
+  width: calc(100% - 2em);
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  font-family: $font-main;
+  font-size: .8em;
+}
+
+button,
+input[type="submit"],
+.button {
+  @include prefix(transition, background 200ms);
+  -webkit-appearance: none;
+  background: $color-blue;
+  border: 0;
+  border-radius: 0;
+  color: $color-teal;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .8em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    @include prefix(transition, background 200ms);
+    background-color: $color-teal;
+    color: $color-blue;
+  }
+}
+
+input[type="submit"] {
+  width: 100%;
+}
+
+.p-form-half {
+  float: left;
+  width: 48%;
+  &.right {
+    float: right;
+  }
+}
+
+.response {
+  line-height: 1.4;
+  margin-bottom: 1em;
+}

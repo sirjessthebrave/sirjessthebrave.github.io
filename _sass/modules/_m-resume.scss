@@ -1,0 +1,73 @@
+.resume{
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: scroll;
+	@include breakpoint($break-large){
+		overflow: hidden;
+	}
+	.resume-inner{
+		overflow: hidden;
+    	margin: 44px 0;
+    	@include breakpoint($break-large){
+    		margin: 0;
+    	}
+	}
+	h2.orange{
+		color: $color-orange;
+	}
+	.two-thirds-wrapper {
+		padding-left: 2em;
+		margin-top: 70px;
+	}
+	.resume-list {
+		list-style: square inside;
+		color: $color-orange;
+		padding: 0;
+		li{
+			font-weight: 700;
+			font-size: 18px;
+			list-style: square inside;
+			line-height: 1.2;
+			a {
+				color: $color-dark-gray;
+				font-size: 14px;
+			}
+		}
+	}
+	.resume-text {
+		width: 45%;
+		margin: 0 auto;
+		color: $color-orange;
+		position: relative;
+		z-index: 3;
+		a{
+			color: $color-orange;
+		}
+	}
+	.resume-year{
+		font-family: 'Roboto Slab', serif;
+		text-transform: uppercase;
+	    font-size: 75px;
+	    text-align: left;
+	    letter-spacing: 1px;
+	    display: inline;
+	    font-weight: 700;
+	    position: relative;
+    	left: -21px;
+    	color: $color-dark-gray;
+    	position: relative;
+    	z-index: 0;
+	    @include breakpoint($break-large){
+		    font-size: 336px;
+		    letter-spacing: -74px;
+		}
+		.orange {
+			color: $color-orange;
+		}
+	}
+}
+span.italics{
+	font-style: italics;
+}

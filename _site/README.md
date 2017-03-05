@@ -1,7 +1,10 @@
-# sirjessthebrave.github.io
-Jessica Bell's personal site
+# [Jessica Bell](http://sirjessthebrave.github.io)
 
+## Development
+This site uses [Jekyll](http://jekyllrb.com/) and hosts on Github pages.
 
-Contact Jessica:
-@sirjessthebrave
-jess.bell317 [at] gmail.com
+If you don't have bundler:
+- `gem install bundler`
+Then:
+- `bundle install`
+- `bundle exec jekyll serve`

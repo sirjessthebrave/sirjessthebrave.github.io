@@ -1,0 +1,44 @@
+header, footer {
+	background: $color-off-white;
+	padding: .5em;
+	position: fixed;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 14px;
+	.logo{
+		display: inline;
+		text-transform: uppercase;
+    	letter-spacing: -6px;
+    	font-size: 30px;
+		.orange{
+			color: $color-orange;
+		}
+	}
+	ul {
+		padding: 0;
+		display: inline;
+		li{
+			list-style: none;
+			display: inline;
+			padding-right: 1em;
+		}
+	}
+}
+header{
+	top:0;
+	.links-header{
+		float: right;
+		width: 80%;
+		text-align: right;
+	}
+}
+footer{
+	bottom:0;
+	li {
+		float: left;
+		text-align: left;
+	}
+	.logo {
+		float: right
+	}
+}
