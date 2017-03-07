@@ -1,0 +1,119 @@
+.home-wrapper{
+	display: table;
+	width: 100%;
+	height: 100vh;
+
+	.home{
+		display: table-row;
+	}
+	h1.home{
+	    text-transform: uppercase;
+	    font-size: 75px;
+	    text-align: left;
+	    letter-spacing: 1px;
+	    display: inline;
+	    @include breakpoint($break-large){
+			font-size: 175px;
+	    letter-spacing: -30px;
+		}
+	  }
+
+	.table-cell{
+		display: block;
+		vertical-align: middle;
+		font-size: 20px;
+		text-transform: lowercase;
+		text-align: right;
+		padding-right: 1em;
+		box-sizing:border-box;
+		@include breakpoint($break-large){
+			display: table-cell;
+			text-align: left;
+			padding-right:0px;
+		}
+		.orange {
+			color: $color-orange;
+			text-transform:uppercase;
+			font-size: 22px;
+			display: block;
+			text-align: right;
+			@include breakpoint($break-large){
+				display: inline;
+			}
+		}
+		a {
+			color: $color-off-white;
+			font-weight: 400;
+			display: block;
+			text-align: right;
+			&:hover{
+				border-bottom: solid 7px $color-off-white;
+			}
+			@include breakpoint($break-large){
+				display: inline;
+			}
+		}
+		&.title{
+			width: 100%;
+			@include breakpoint($break-large){
+				width: 560px;
+			}	
+		}
+	}
+}
+
+.design-note {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: $color-off-white;
+	font-style: italic;
+	font-size: 10px;
+	cursor: pointer;	
+}
+.design-modal {
+	display: none;
+	position: absolute;
+	top: 25%;
+	width: 570px;
+	max-width: 100%;
+	left: 25%;
+	line-height: 2;
+	padding: 3em;
+	background: $color-off-white;
+	color: $color-blue;
+	border: solid 1px $color-blue;
+
+	span{
+		position: absolute;
+	    top: 2px;
+	    right: 11px;
+		color: $color-blue;
+		cursor: pointer;
+	}
+	p, img {
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+	}
+	p{
+		padding-right: 1.5em;
+		text-align: right;
+		margin:0;
+	}
+	a {
+		text-decoration: underline;
+	}
+}
+.modal-overlay {
+	display:none;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+

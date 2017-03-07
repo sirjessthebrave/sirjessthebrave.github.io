@@ -1,85 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Jessica Ryan Bell</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="jquery-1.11.1.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Open+Sans:400,800' rel='stylesheet' type='text/css'>
-</head>
-<body>
-<div class="containter"> 
-  <div class="side-nav" id="sticky">
-  	<div class="side-logo">
-  		<img src="images/giphy.gif">
-  	</div>
-
-  	<ul>
-  		<li class="nav_button"><a href="index.html">Home</a></li>
-  		<li class="nav_button"><a href="http://sirjessthebrave.github.io/resume/" target="_blank">Resume</a></li>
-      <li class="nav_button"><a href="projects.html">Projects</a></li>
-      <li class="nav_button"><a href="http://www.github.com/sirjessthebrave" target="_blank">GitHub</a></li>
-      <li class="nav_button"><a href="http://www.codepen.io/sirjessthebrave" target="_blank">CodePen</a></li>
-  	</ul>
-  </div>
-<div id="content-wrapper">
-  <div class="title-area">
-  	<a href="index.html"><h1>Jessica Ryan Bell</h1></a> 
-    <h2>Web Developer</h2>
-  </div>
-
-  <div class="about-me">
-  	<h2>About Jessica</h2>
-  	<p>Originally from Northern California, Jessica is currently based out of Washington DC.  What's her jam?  Cooking, comics, code, craft beer, cycling, cynacism, cats, and cheese. A background in international relations and international education exhange brought Jessica to the DC area, where she discovered digital media and web development.</p>
-    <p>Jessica Bell is a Front End developer at RepEquity, a digital agency focusing on reputation management, online branding, and digital advocacy. She also works as a TA for General Assembly's Front End Web Development booktamp. She has a B.A. in International Relations from San Francisco State University and has worked all around the world.  After a period in Berlin Jessica relocated to DC where she worked with a German foundation as a catch-all digital media coordinator. She started learning HTML, CSS, and WordPress in order to manage and refine the foundation’s  new site. Jess landed a job as a Junior Developer after a series of tutorials and a General Assembly Front End Development course. She now works as a front end and Drupal developer. She is currently learning Angular.js, refining her Drupal skills, keeping up with the latest fun css animation, and active in the DC women's tech scene.  Find her teaching or hanging with her JavaScrip Guild at General Assembly, coding with Women Who Code's Front End Hack Night, sipping on an old fashioned and chatting advocasy and tech, or adding to her fabulous library of gifs.</p>
-  </div>
-
-  <div class="totro"><img src="images/totoro.gif"></div>
-
-  <div class="skillz">
-    <h2>Skillz</h2>
-    <p>HTML, CSS, JavaScript, WordPress, Drupal, Git, Tabletop.js, SASS, Angular.js(beginner), SalesForce, Social Media (Facebook, Twitter, LinkedIn, YouTube, Reddit), blogging, gif curation, Microsoft office, and German</p>
-  </div>
-  <div class="organizations">
-    <h2>Organizations and Leadership</h2>
-    <ul class="organizations-list">
-      <li class="organizations-list-item"><a href="http://dcfemtech.github.io/">DC FemTech</a></li>
-      <li class="organizations-list-item"><a href="http://www.meetup.com/dc-tech-meetup/"></a>DC Tech Meetup</li>
-      <li class="organizations-list-item"><a href="http://www.meetup.com/Women-Who-Code-DC/">Women Who Code Front End Hack Night</a></li>
-      <li class="organizations-list-item"><a href="#">General Assembly JavaScript Guild</a></li>
-    </ul>
-  </div>
-
-  <div class="speaking">
-    <h2>Speaking and Awards</h2>
-    <ul>
-      <li>DC FemTech 2016 Powerful Woman Programmer</li>
-      <li>Women in Tech Summit DC: Syntactically Awesome Style Sheets</li>
-      <li>Women in Tech Campaign Twitter Panel: IoT</li>
-      <li>JavaScript Guild: Intro to Drupal, Intro to Sass, Intro to Git</li>
-      <li>Women Who Code: Intro to Sass, Intro to Git</li>
-      <li>RepEquity: The Developer's Journey</li>
-      <li>American University HyperNetworking Panel</li>
-      <li>Research in Germany</li>
-    </ul>
-  </div>
+---
+layout: home
+---
+<div class="home-wrapper">
+	<div class="home" border="none">
+		<div class="table-cell title">
+			<h1 class="home">JessBell</h1>
+		</div>
+		<div class="table-cell">
+			<span class="orange">webdeveloper</span>
+			<a href="{{ "about.html" | prepend: site.baseurl }}">About</a>
+			<a href="{{ "projects.html" | prepend: site.baseurl }}">projects</a>
+			<a href="{{ "projects.html" | prepend: site.baseurl }}">community</a>
+			<a href="{{ "resume.html" | prepend: site.baseurl }}">resume</a>
+			<a href="{{ "contact.html" | prepend: site.baseurl }}">contact</a>
+		</div>
+	</div>
 </div>
-
-  <footer id="footer">
-  <ul>
-      <li><a href="mailto:jess.bell317@gmail.com"><img src="icons/email.png"></li></a>
-      <li><a href="www.github.com/sirjessthebrave"><img src="icons/github.png"></li></a>
-      <li><a href="www.linkedin.com/jessbell317"><img src="icons/linkedin.png"></li></a>
-      <li><a href="www.twitter.com/sirjessthebrave"><img src="icons/twitter.png"></li></a>
-      <li><a href="www.codepen.io/sirjessthebrave"><img src="icons/facebook.png"></li></a>
-    </ul>
-  </footer>
-</div>
-
-<script type="text/javascript" src="script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="stickyMojo.js"></script>
-
-
-</body>
-
-</html>

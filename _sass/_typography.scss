@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Roboto+Slab:300,400,700|Source+Sans+Pro:400,700);
+
+body {
+  color: $color-body;
+  font-family: 'Source Sans Pro', Helvetica, san-serif;
+  font-size: 17px;
+  font-weight: 400;
+  background-color: $color-off-white;
+  @media(max-width: $break-medium) {
+    font-size: 16px;
+  }
+  @media(max-width: $break-small) {
+    font-size: 15px;
+  }
+  &.home{
+    background-color: $color-blue;
+  }
+}
+
+p {
+  margin:0;
+  line-height: 1.5;
+}
+
+a {
+  @include prefix(transition, color 100ms);
+  color: $color-blue;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Roboto Slab';
+  &:hover {
+    @include prefix(transition, color 100ms);
+    color: $color-teal;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  margin: 1em 0 .5em;
+  line-height: 1.1;
+  a {
+    font-weight: inherit;
+  }
+}
+
+h1 {
+  color: $color-off-white;
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: $color-orange;
+  font-family: 'Source Sans Pro', serif;
+  &.white{
+    color:$color-off-white;
+  }
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+li {
+  line-height: 1.8;
+  list-style: initial;
+  list-style-position: inside;
+}
+
+.main-intro {
+  font-size: 1.25em;
+}
+
+.main-headline {
+  position: relative;
+  display: inline-block;
+  &:after {
+    content: '';
+    height: 20px;
+    position: absolute;
+    width: 100%;
+    background-color: $color-teal;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.visually-hidden {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+}
