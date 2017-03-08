@@ -3,7 +3,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden;
+	overflow: scroll;
+	margin: 60px 0;
+	@include breakpoint($break-large){
+		overflow: hidden;
+		margin: auto;
+	}
 	.about-inner-wrapper{
 		width: 70%;
 	  	overflow: auto;
@@ -28,10 +33,14 @@
 			text-align: left;
 		}
 		.about-image{
-			height: 100%;
+			height: auto;
 		    max-height: 300px;
 		    float: right;
-		    width: auto;
+		    width: 100%;
+		    @include breakpoint($break-large){
+		    	height: 100%;
+		    	width: auto;
+		    }
 		}
 	}
 }

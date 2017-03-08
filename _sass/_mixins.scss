@@ -1,9 +1,9 @@
 @mixin breakpoint($bp, $no-ie: false) {
 
   // Pass the given content and wrap it in a min-width media query
-  @media (min-width: #{$bp}) {
+  @media only screen and (min-width: #{$bp}) {
     // The content contained within the call to our mixin
-    @content;
+    @content;  
   }
 
   // Check to see if we have defined the no-query variable

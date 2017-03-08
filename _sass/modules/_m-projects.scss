@@ -1,11 +1,12 @@
 .projects{
 	height:100%;
-	display: flex;
+	display: block;
 	justify-content: center;
 	align-items: center;
 	overflow: scroll;
 	@include breakpoint($break-large){
 		overflow: hidden;
+		display: flex;
 	}
 	.projects-wrapper {
 	  	overflow: auto;
@@ -23,10 +24,11 @@
 	    display: inline;
 	    font-weight: 700;
 	    position: relative;
-    	left: -21px;
+    	left: 0;
 	    @include breakpoint($break-large){
 			font-size: 250px;
 	    	letter-spacing: -50px;
+	    	left: -21px;
 		}
 		&.orange{
 			color: $color-orange;
@@ -58,6 +60,10 @@
 		line-height: 1.2;
 		font-size: 14px;
 		padding-top: 40px;
+		display: inline-block;
+		@include breakpoint($break-large){
+			display: block;
+		}
 		&.orange{
 			color: $color-orange;
 			a {

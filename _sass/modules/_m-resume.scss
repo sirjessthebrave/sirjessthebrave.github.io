@@ -1,15 +1,17 @@
 .resume{
 	height:100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: block;
 	overflow: scroll;
 	@include breakpoint($break-large){
 		overflow: hidden;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.resume-inner{
 		overflow: hidden;
-    	margin: 44px 0;
+    	margin: 60px 0;
     	@include breakpoint($break-large){
     		margin: 0;
     	}
@@ -19,7 +21,7 @@
 	}
 	.two-thirds-wrapper {
 		padding-left: 2em;
-		margin-top: 70px;
+		margin-top: 30px;
 	}
 	.resume-list {
 		list-style: square inside;
@@ -30,6 +32,7 @@
 			font-size: 18px;
 			list-style: square inside;
 			line-height: 1.2;
+			padding-bottom: .5em;
 			a {
 				color: $color-dark-gray;
 				font-size: 14px;
@@ -37,11 +40,16 @@
 		}
 	}
 	.resume-text {
-		width: 45%;
+		width: 100%;
 		margin: 0 auto;
 		color: $color-orange;
 		position: relative;
 		z-index: 3;
+		box-sizing: border-box;
+		padding: 1em;
+		@include breakpoint($break-large){
+			width: 45%;
+		}
 		a{
 			color: $color-orange;
 		}

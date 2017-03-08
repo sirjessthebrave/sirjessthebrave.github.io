@@ -3,17 +3,20 @@
 }
 .community {
 	height:100%;
-	display: flex;
+	display: block;
 	justify-content: center;
 	align-items: center;
 	overflow: scroll;
+	margin: 70px 0;
 	@include breakpoint($break-large){
 		overflow: hidden;
+		display: flex;
+		margin-bottom: auto;
 	}
 	.community-inner-wrapper {
 		width: 80%;
 	  	overflow: auto;
-    	margin: 44px 0;
+    	margin: 0 auto;
     	@include breakpoint($break-large){
     		margin: 0;
     	}
