@@ -1,5 +1,5 @@
 current directory: /Users/jessica/Documents/personal/sirjessthebrave.github.io/vendor/bundle/ruby/2.6.0/gems/ffi-1.13.1/ext/ffi_c
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20201014-23456-12ytq5y.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20201014-34976-12s71qo.rb extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ffi,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/ffi... yes
 checking for ffi_prep_closure_loc() in -lffi... yes
@@ -42,4 +42,4 @@ ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/
 
 current directory: /Users/jessica/Documents/personal/sirjessthebrave.github.io/vendor/bundle/ruby/2.6.0/gems/ffi-1.13.1/ext/ffi_c
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20201014-23456-11nyxtf
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20201014-34976-1a3r6me

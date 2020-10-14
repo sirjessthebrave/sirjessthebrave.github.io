@@ -72,9 +72,9 @@ have_iconv?: checking for iconv... -------------------- yes
 ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.Internal.sdk/usr/local/lib'
 Undefined symbols for architecture x86_64:
   "_iconv", referenced from:
-      _main in conftest-72dcee.o
+      _main in conftest-4bf058.o
   "_iconv_open", referenced from:
-      _main in conftest-72dcee.o
+      _main in conftest-4bf058.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
