@@ -1,77 +1,81 @@
-.projects{
-	height:100%;
-	display: block;
-	justify-content: center;
-	align-items: center;
-	overflow: scroll;
-	@include breakpoint($break-large){
-		overflow: hidden;
-		display: flex;
-	}
-	.projects-wrapper {
-	  	overflow: auto;
-    	margin: 44px 0;
-    	@include breakpoint($break-large){
-    		margin: 0;
-    	}
-	}
-	.project-heading {
-		font-family: 'Roboto Slab', serif;
-		text-transform: uppercase;
-	    font-size: 75px;
-	    text-align: left;
-	    letter-spacing: 1px;
-	    display: inline;
-	    font-weight: 700;
-	    position: relative;
-    	left: 0;
-	    @include breakpoint($break-large){
-			font-size: 250px;
-	    	letter-spacing: -50px;
-	    	left: -21px;
-		}
-		&.orange{
-			color: $color-orange;
-		}
-		span.orange{
-			color: $color-orange;
-		}
-		span.gray{
-			color: $color-dark-gray;
-		}
-	}
+.projects {
+  height: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  @include breakpoint($break-large) {
+    overflow: hidden;
+    display: flex;
+  }
+  .projects-wrapper {
+    overflow: auto;
+    margin: 44px 0;
+    @include breakpoint($break-large) {
+      margin: 0;
+    }
+  }
+  .project-heading-link:hover {
+    color: $color-blue;
+    display: block;
+  }
+  .project-heading {
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+    font-size: 75px;
+    text-align: left;
+    letter-spacing: 1px;
+    display: inline;
+    font-weight: 700;
+    position: relative;
+    left: 0;
+    @include breakpoint($break-large) {
+      font-size: 250px;
+      letter-spacing: -50px;
+      left: -21px;
+    }
+    &.orange {
+      color: $color-orange;
+    }
+    span.orange {
+      color: $color-orange;
+    }
+    span.gray {
+      color: $color-dark-gray;
+    }
+  }
 }
 .three-colum {
-	float: none;
-	width: 100%;
-	padding: 1em 0;
-	@include breakpoint($break-large){
-		float: left;
-		width: 33.33333%;
-		padding: 7em 0;
-	}
-	&.background-white{
-		background-color: $color-off-white;
-	}
-	p{
-		width: 45%;
-		margin: 0 auto;
-		color: $color-off-white;
-		line-height: 1.2;
-		font-size: 14px;
-		padding-top: 40px;
-		display: inline-block;
-		@include breakpoint($break-large){
-			display: block;
-		}
-		&.orange{
-			color: $color-orange;
-			a {
-				color: $color-orange;
-			}
-		}
-		a {
-			color: $color-off-white;
-		}
-	}
+  float: none;
+  width: 100%;
+  padding: 1em 0;
+  @include breakpoint($break-large) {
+    float: left;
+    width: 33.33333%;
+    padding: 17em 0;
+  }
+  &.background-white {
+    background-color: $color-off-white;
+  }
+  p {
+    width: 45%;
+    margin: 0 auto;
+    color: $color-off-white;
+    line-height: 1.2;
+    font-size: 14px;
+    padding-top: 40px;
+    display: inline-block;
+    @include breakpoint($break-large) {
+      display: block;
+    }
+    &.orange {
+      color: $color-orange;
+      a {
+        color: $color-orange;
+      }
+    }
+    a {
+      color: $color-off-white;
+    }
+  }
 }

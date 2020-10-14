@@ -584,7 +584,7 @@ footer {
     @media only screen and (min-width: 900px) {
       .resume .resume-year {
         font-size: 336px;
-        letter-spacing: -74px; } }
+        letter-spacing: -92px; } }
     .resume .resume-year .orange {
       color: #c34423; }
 
@@ -607,8 +607,11 @@ span.italics {
     @media only screen and (min-width: 900px) {
       .projects .projects-wrapper {
         margin: 0; } }
+  .projects .project-heading-link:hover {
+    color: #2a5c8f;
+    display: block; }
   .projects .project-heading {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     text-transform: uppercase;
     font-size: 75px;
     text-align: left;
@@ -637,7 +640,7 @@ span.italics {
     .three-colum {
       float: left;
       width: 33.33333%;
-      padding: 7em 0; } }
+      padding: 17em 0; } }
   .three-colum.background-white {
     background-color: #f7f3ea; }
   .three-colum p {
@@ -676,20 +679,11 @@ span.italics {
     margin-bottom: 0;
     float: none;
     width: 100%;
-    text-align: right;
+    text-align: left;
     overflow: hidden; }
-    @media only screen and (min-width: 900px) {
-      .about h2 {
-        width: 35%;
-        float: right;
-        text-align: left; } }
   .about .two-thirds-wrapper {
-    padding-right: 0;
-    text-align: right; }
-    @media only screen and (min-width: 900px) {
-      .about .two-thirds-wrapper {
-        padding-right: 3em;
-        text-align: left; } }
+    text-align: left;
+    padding-left: 3em; }
     .about .two-thirds-wrapper .about-image {
       height: auto;
       max-height: 300px;
@@ -780,7 +774,7 @@ span.italics {
   right: 10px;
   color: #f7f3ea;
   font-style: italic;
-  font-size: 10px;
+  font-size: 14px;
   cursor: pointer; }
 
 .design-modal {
@@ -842,7 +836,6 @@ span.italics {
     width: 50%;
     margin: 0 auto; }
   .contact .contact-img {
-    border: solid 6px #f7f3ea;
     display: none; }
     @media only screen and (min-width: 900px) {
       .contact .contact-img {
@@ -850,6 +843,8 @@ span.italics {
         width: auto;
         float: right;
         display: block; } }
+  .contact .contact-link:hover {
+    color: #c34423; }
   .contact h2 {
     color: #f7f3ea;
     margin-top: 4em; }

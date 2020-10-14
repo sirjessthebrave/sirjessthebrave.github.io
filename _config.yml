@@ -33,3 +33,5 @@ gems:
 
 whitelist:
   - jekyll-redirect-from
+
+exclude: [vendor]
